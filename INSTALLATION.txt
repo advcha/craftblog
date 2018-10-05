@@ -1,0 +1,555 @@
+REF: https://craftcms.com/
+https://docs.craftcms.com/v3/installation.html#step-1-download-craft
+
+teddy@teddy:~/Documents/works$ composer create-project craftcms/craft
+Installing craftcms/craft (1.0.36)
+  - Installing craftcms/craft (1.0.36): Downloading (100%)         
+Created project in /home/teddy/Documents/works/craft
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 50 installs, 0 updates, 0 removals
+  - Installing craftcms/plugin-installer (1.5.2): Downloading (100%)         
+  - Installing yiisoft/yii2-composer (2.0.7): Downloading (100%)         
+  - Installing symfony/process (v3.3.6): Downloading (100%)         
+  - Installing zendframework/zend-stdlib (3.2.1): Downloading (100%)         
+  - Installing zendframework/zend-escaper (2.6.0): Loading from cache
+  - Installing doctrine/lexer (v1.0.1): Downloading (100%)         
+  - Installing egulias/email-validator (2.1.6): Downloading (100%)         
+  - Installing swiftmailer/swiftmailer (v6.1.3): Downloading (100%)         
+  - Installing yiisoft/yii2-swiftmailer (2.1.2): Downloading (100%)         
+  - Installing yiisoft/yii2 (2.0.15.1): Downloading (100%)         
+  - Installing yiisoft/yii2-debug (2.0.14): Downloading (100%)         
+  - Installing yiisoft/yii2-bootstrap (2.0.8): Downloading (100%)         
+  - Installing zendframework/zend-feed (2.10.3): Downloading (100%)         
+  - Installing yiisoft/yii2-queue (2.1.0): Downloading (100%)         
+  - Installing craftcms/cms (3.0.26.1): Downloading (100%)         
+  - Installing symfony/polyfill-ctype (v1.9.0): Loading from cache
+  - Installing symfony/polyfill-mbstring (v1.9.0): Loading from cache
+  - Installing twig/twig (v2.5.0): Downloading (100%)         
+  - Installing true/punycode (v2.1.1): Downloading (100%)         
+  - Installing seld/cli-prompt (1.0.3): Downloading (100%)         
+  - Installing pixelandtonic/imagine (v0.7.1.3): Downloading (100%)         
+  - Installing mikehaertl/php-shellcommand (1.4.1): Downloading (100%)         
+  - Installing paragonie/random_compat (v2.0.17): Loading from cache
+  - Installing guzzlehttp/promises (v1.3.1): Loading from cache
+  - Installing psr/http-message (1.0.1): Loading from cache
+  - Installing guzzlehttp/psr7 (1.4.2): Loading from cache
+  - Installing guzzlehttp/guzzle (6.3.3): Loading from cache
+  - Installing league/oauth2-client (2.3.0): Downloading (100%)         
+  - Installing league/flysystem (1.0.47): Downloading (100%)         
+  - Installing enshrined/svg-sanitize (0.9.2): Downloading (100%)         
+  - Installing elvanto/litemoji (1.4.4): Downloading (100%)         
+  - Installing danielstjules/stringy (3.1.0): Downloading (100%)         
+  - Installing creocoder/yii2-nested-sets (0.9.0): Downloading (100%)         
+  - Installing craftcms/server-check (1.1.6): Downloading (100%)         
+  - Installing craftcms/oauth2-craftid (1.0.0.1): Downloading (100%)         
+  - Installing symfony/finder (v3.3.6): Downloading (100%)         
+  - Installing symfony/filesystem (v3.3.6): Downloading (100%)         
+  - Installing psr/log (1.0.2): Loading from cache
+  - Installing symfony/debug (v3.3.6): Downloading (100%)         
+  - Installing symfony/console (v3.3.6): Downloading (100%)         
+  - Installing seld/phar-utils (1.0.1): Downloading (100%)         
+  - Installing seld/jsonlint (1.7.1): Loading from cache
+  - Installing justinrainbow/json-schema (5.2.7): Loading from cache
+  - Installing composer/spdx-licenses (1.4.0): Loading from cache
+  - Installing composer/semver (1.4.2): Downloading (100%)         
+  - Installing composer/ca-bundle (1.1.2): Loading from cache
+  - Installing composer/composer (1.6.3): Downloading (100%)         
+  - Installing cebe/markdown (1.1.2): Downloading (100%)         
+  - Installing ezyang/htmlpurifier (v4.10.0): Downloading (100%)         
+  - Installing vlucas/phpdotenv (v2.5.1): Downloading (100%)         
+zendframework/zend-feed suggests installing zendframework/zend-cache (Zend\Cache component, for optionally caching feeds between requests)
+zendframework/zend-feed suggests installing zendframework/zend-db (Zend\Db component, for use with PubSubHubbub)
+zendframework/zend-feed suggests installing zendframework/zend-http (Zend\Http for PubSubHubbub, and optionally for use with Zend\Feed\Reader)
+zendframework/zend-feed suggests installing zendframework/zend-servicemanager (Zend\ServiceManager component, for easily extending ExtensionManager implementations)
+zendframework/zend-feed suggests installing zendframework/zend-validator (Zend\Validator component, for validating email addresses used in Atom feeds and entries when using the Writer subcomponent)
+yiisoft/yii2-queue suggests installing yiisoft/yii2-redis (Need for Redis queue.)
+yiisoft/yii2-queue suggests installing pda/pheanstalk (Need for Beanstalk queue.)
+yiisoft/yii2-queue suggests installing php-amqplib/php-amqplib (Need for AMQP queue.)
+yiisoft/yii2-queue suggests installing enqueue/amqp-lib (Need for AMQP interop queue.)
+yiisoft/yii2-queue suggests installing ext-gearman (Need for Gearman queue.)
+yiisoft/yii2-queue suggests installing aws/aws-sdk-php (Need for aws SQS.)
+craftcms/cms suggests installing ext-imagick (Adds support for more image processing formats and options.)
+pixelandtonic/imagine suggests installing ext-imagick (to use the Imagick implementation)
+pixelandtonic/imagine suggests installing ext-gmagick (to use the Gmagick implementation)
+paragonie/random_compat suggests installing ext-libsodium (Provides a modern crypto API that can be used to generate random bytes.)
+league/flysystem suggests installing league/flysystem-aws-s3-v2 (Allows you to use S3 storage with AWS SDK v2)
+league/flysystem suggests installing league/flysystem-aws-s3-v3 (Allows you to use S3 storage with AWS SDK v3)
+league/flysystem suggests installing league/flysystem-azure (Allows you to use Windows Azure Blob storage)
+league/flysystem suggests installing league/flysystem-cached-adapter (Flysystem adapter decorator for metadata caching)
+league/flysystem suggests installing league/flysystem-eventable-filesystem (Allows you to use EventableFilesystem)
+league/flysystem suggests installing league/flysystem-rackspace (Allows you to use Rackspace Cloud Files)
+league/flysystem suggests installing league/flysystem-sftp (Allows you to use SFTP server storage via phpseclib)
+league/flysystem suggests installing league/flysystem-webdav (Allows you to use WebDAV storage)
+league/flysystem suggests installing league/flysystem-ziparchive (Allows you to use ZipArchive adapter)
+league/flysystem suggests installing spatie/flysystem-dropbox (Allows you to use Dropbox storage)
+league/flysystem suggests installing srmklive/flysystem-dropbox-v2 (Allows you to use Dropbox storage for PHP 5 applications)
+symfony/console suggests installing symfony/event-dispatcher ()
+Writing lock file
+Generating optimized autoload files
+> @php -r "copy('.env.example', '.env');"
+> @php -r "unlink('composer.json');"
+> @php -r "unlink('LICENSE.md');"
+> @php -r "unlink('README.md');"
+> @php -r "rename('composer.json.default', 'composer.json');"
+Generating optimized autoload files
+> @php craft setup/welcome
+
+   ______ .______          ___       _______ .___________.
+  /      ||   _  \        /   \     |   ____||           |
+ |  ,----'|  |_)  |      /  ^  \    |  |__   `---|  |----`
+ |  |     |      /      /  /_\  \   |   __|      |  |
+ |  `----.|  |\  \----./  _____  \  |  |         |  |
+  \______|| _| `._____/__/     \__\ |__|         |__|
+ 
+     A       N   E   W       I   N   S   T   A   L   L
+               ______ .___  ___.      _______.
+              /      ||   \/   |     /       |
+             |  ,----'|  \  /  |    |   (----`
+             |  |     |  |\/|  |     \   \
+             |  `----.|  |  |  | .----)   |
+              \______||__|  |__| |_______/
+
+
+
+Generating a security key ... done (haDj7lyFgflgEV7f_KMQk80mUy-JRxD6)
+
+Welcome to Craft CMS! Run the following command if you want to setup Craft from your terminal:
+
+    ~/Documents/works/craft/craft setup
+
+SETUP!
+CREATE THE DATABASE FIRST (craft)
+
+teddy@teddy:~/Documents/works$ cd craft
+teddy@teddy:~/Documents/works/craft$ ~/Documents/works/craft/craft setup
+Which database driver are you using? [mysql,pgsql,?]: mysql
+Database server name or IP address: [localhost] 
+Database port: [3306] 
+Database username: [root] 
+Database password: 
+Database name: craft
+Database table prefix: cr_
+Testing database credentials ... failed: SQLSTATE[HY000] [1049] Unknown database 'craft'
+Which database driver are you using? [mysql,pgsql,?]: mysql
+Database server name or IP address: [localhost] 
+Database port: [3306] 
+Database username: [root] 
+Database password: 
+Database name: [craft] 
+Database table prefix (type "none" for none): [cr_] 
+Testing database credentials ... success!
+Saving database credentials to your .env file ... done
+
+Install Craft now? (yes|no) [yes]:
+
+Username: [admin] 
+Email: advcha@yahoo.com
+Password: admin123
+New Password should contain at least 6 characters.
+Password: admin123
+Confirm: admin123
+Site name: craft.test
+Site URL: [@web] craft.test
+Site language: [en-US] 
+*** installing Craft
+    > create table {{%assetindexdata}} ... done (time: 0.024s)
+    > create table {{%assets}} ... done (time: 0.017s)
+    > create table {{%assettransformindex}} ... done (time: 0.016s)
+    > create table {{%assettransforms}} ... done (time: 0.016s)
+    > create table {{%categories}} ... done (time: 0.015s)
+    > create table {{%categorygroups}} ... done (time: 0.016s)
+    > create table {{%categorygroups_sites}} ... done (time: 0.016s)
+    > create table {{%content}} ... done (time: 0.015s)
+    > create table {{%craftidtokens}} ... done (time: 0.015s)
+    > create table {{%deprecationerrors}} ... done (time: 0.019s)
+    > create table {{%elementindexsettings}} ... done (time: 0.015s)
+    > create table {{%elements}} ... done (time: 0.015s)
+    > create table {{%elements_sites}} ... done (time: 0.013s)
+    > create table {{%resourcepaths}} ... done (time: 0.013s)
+    > create table {{%systemmessages}} ... done (time: 0.014s)
+    > create table {{%entries}} ... done (time: 0.013s)
+    > create table {{%entrydrafts}} ... done (time: 0.016s)
+    > create table {{%entrytypes}} ... done (time: 0.021s)
+    > create table {{%entryversions}} ... done (time: 0.020s)
+    > create table {{%fieldgroups}} ... done (time: 0.024s)
+    > create table {{%fieldlayoutfields}} ... done (time: 0.018s)
+    > create table {{%fieldlayouts}} ... done (time: 0.018s)
+    > create table {{%fieldlayouttabs}} ... done (time: 0.018s)
+    > create table {{%fields}} ... done (time: 0.015s)
+    > create table {{%globalsets}} ... done (time: 0.018s)
+    > create table {{%info}} ... done (time: 0.021s)
+    > create table {{%matrixblocks}} ... done (time: 0.019s)
+    > create table {{%matrixblocktypes}} ... done (time: 0.019s)
+    > create table {{%migrations}} ... done (time: 0.023s)
+    > create table {{%plugins}} ... done (time: 0.017s)
+    > create table {{%queue}} ... done (time: 0.020s)
+    > create table {{%relations}} ... done (time: 0.016s)
+    > create table {{%routes}} ... done (time: 0.019s)
+    > create table {{%sections}} ... done (time: 0.017s)
+    > create table {{%sections_sites}} ... done (time: 0.016s)
+    > create table {{%sessions}} ... done (time: 0.016s)
+    > create table {{%shunnedmessages}} ... done (time: 0.016s)
+    > create table {{%sites}} ... done (time: 0.017s)
+    > create table {{%sitegroups}} ... done (time: 0.015s)
+    > create table {{%structureelements}} ... done (time: 0.015s)
+    > create table {{%structures}} ... done (time: 0.016s)
+    > create table {{%systemsettings}} ... done (time: 0.019s)
+    > create table {{%taggroups}} ... done (time: 0.019s)
+    > create table {{%tags}} ... done (time: 0.016s)
+    > create table {{%templatecacheelements}} ... done (time: 0.016s)
+    > create table {{%templatecachequeries}} ... done (time: 0.016s)
+    > create table {{%templatecaches}} ... done (time: 0.016s)
+    > create table {{%tokens}} ... done (time: 0.015s)
+    > create table {{%usergroups}} ... done (time: 0.018s)
+    > create table {{%usergroups_users}} ... done (time: 0.015s)
+    > create table {{%userpermissions}} ... done (time: 0.011s)
+    > create table {{%userpermissions_usergroups}} ... done (time: 0.011s)
+    > create table {{%userpermissions_users}} ... done (time: 0.014s)
+    > create table {{%userpreferences}} ... done (time: 0.017s)
+    > create table {{%users}} ... done (time: 0.022s)
+    > create table {{%volumefolders}} ... done (time: 0.016s)
+    > create table {{%volumes}} ... done (time: 0.021s)
+    > create table {{%widgets}} ... done (time: 0.016s)
+    > create index cr_assetindexdata_sessionId_volumeId_idx on {{%assetindexdata}} (sessionId,volumeId) ... done (time: 0.016s)
+    > create index cr_assetindexdata_volumeId_idx on {{%assetindexdata}} (volumeId) ... done (time: 0.016s)
+    > create unique index cr_assets_filename_folderId_unq_idx on {{%assets}} (filename,folderId) ... done (time: 0.015s)
+    > create index cr_assets_folderId_idx on {{%assets}} (folderId) ... done (time: 0.016s)
+    > create index cr_assets_volumeId_idx on {{%assets}} (volumeId) ... done (time: 0.016s)
+    > create index cr_assettransformindex_volumeId_assetId_location_idx on {{%assettransformindex}} (volumeId,assetId,location) ... done (time: 0.015s)
+    > create unique index cr_assettransforms_name_unq_idx on {{%assettransforms}} (name) ... done (time: 0.015s)
+    > create unique index cr_assettransforms_handle_unq_idx on {{%assettransforms}} (handle) ... done (time: 0.013s)
+    > create index cr_categories_groupId_idx on {{%categories}} (groupId) ... done (time: 0.012s)
+    > create unique index cr_categorygroups_name_unq_idx on {{%categorygroups}} (name) ... done (time: 0.016s)
+    > create unique index cr_categorygroups_handle_unq_idx on {{%categorygroups}} (handle) ... done (time: 0.012s)
+    > create index cr_categorygroups_structureId_idx on {{%categorygroups}} (structureId) ... done (time: 0.012s)
+    > create index cr_categorygroups_fieldLayoutId_idx on {{%categorygroups}} (fieldLayoutId) ... done (time: 0.015s)
+    > create unique index cr_categorygroups_sites_groupId_siteId_unq_idx on {{%categorygroups_sites}} (groupId,siteId) ... done (time: 0.012s)
+    > create index cr_categorygroups_sites_siteId_idx on {{%categorygroups_sites}} (siteId) ... done (time: 0.013s)
+    > create unique index cr_content_elementId_siteId_unq_idx on {{%content}} (elementId,siteId) ... done (time: 0.014s)
+    > create index cr_content_siteId_idx on {{%content}} (siteId) ... done (time: 0.013s)
+    > create index cr_content_title_idx on {{%content}} (title) ... done (time: 0.013s)
+    > create unique index cr_deprecationerrors_key_fingerprint_unq_idx on {{%deprecationerrors}} (key,fingerprint) ... done (time: 0.014s)
+    > create unique index cr_elementindexsettings_type_unq_idx on {{%elementindexsettings}} (type) ... done (time: 0.013s)
+    > create index cr_elements_fieldLayoutId_idx on {{%elements}} (fieldLayoutId) ... done (time: 0.013s)
+    > create index cr_elements_type_idx on {{%elements}} (type) ... done (time: 0.013s)
+    > create index cr_elements_enabled_idx on {{%elements}} (enabled) ... done (time: 0.013s)
+    > create index cr_elements_archived_dateCreated_idx on {{%elements}} (archived,dateCreated) ... done (time: 0.015s)
+    > create unique index cr_elements_sites_elementId_siteId_unq_idx on {{%elements_sites}} (elementId,siteId) ... done (time: 0.013s)
+    > create index cr_elements_sites_siteId_idx on {{%elements_sites}} (siteId) ... done (time: 0.012s)
+    > create index cr_elements_sites_slug_siteId_idx on {{%elements_sites}} (slug,siteId) ... done (time: 0.017s)
+    > create index cr_elements_sites_enabled_idx on {{%elements_sites}} (enabled) ... done (time: 0.014s)
+    > create unique index cr_systemmessages_key_language_unq_idx on {{%systemmessages}} (key,language) ... done (time: 0.013s)
+    > create index cr_systemmessages_language_idx on {{%systemmessages}} (language) ... done (time: 0.012s)
+    > create index cr_entries_postDate_idx on {{%entries}} (postDate) ... done (time: 0.013s)
+    > create index cr_entries_expiryDate_idx on {{%entries}} (expiryDate) ... done (time: 0.014s)
+    > create index cr_entries_authorId_idx on {{%entries}} (authorId) ... done (time: 0.013s)
+    > create index cr_entries_sectionId_idx on {{%entries}} (sectionId) ... done (time: 0.012s)
+    > create index cr_entries_typeId_idx on {{%entries}} (typeId) ... done (time: 0.012s)
+    > create index cr_entrydrafts_sectionId_idx on {{%entrydrafts}} (sectionId) ... done (time: 0.012s)
+    > create index cr_entrydrafts_entryId_siteId_idx on {{%entrydrafts}} (entryId,siteId) ... done (time: 0.013s)
+    > create index cr_entrydrafts_siteId_idx on {{%entrydrafts}} (siteId) ... done (time: 0.012s)
+    > create index cr_entrydrafts_creatorId_idx on {{%entrydrafts}} (creatorId) ... done (time: 0.013s)
+    > create unique index cr_entrytypes_name_sectionId_unq_idx on {{%entrytypes}} (name,sectionId) ... done (time: 0.013s)
+    > create unique index cr_entrytypes_handle_sectionId_unq_idx on {{%entrytypes}} (handle,sectionId) ... done (time: 0.015s)
+    > create index cr_entrytypes_sectionId_idx on {{%entrytypes}} (sectionId) ... done (time: 0.016s)
+    > create index cr_entrytypes_fieldLayoutId_idx on {{%entrytypes}} (fieldLayoutId) ... done (time: 0.016s)
+    > create index cr_entryversions_sectionId_idx on {{%entryversions}} (sectionId) ... done (time: 0.015s)
+    > create index cr_entryversions_entryId_siteId_idx on {{%entryversions}} (entryId,siteId) ... done (time: 0.013s)
+    > create index cr_entryversions_siteId_idx on {{%entryversions}} (siteId) ... done (time: 0.013s)
+    > create index cr_entryversions_creatorId_idx on {{%entryversions}} (creatorId) ... done (time: 0.019s)
+    > create unique index cr_fieldgroups_name_unq_idx on {{%fieldgroups}} (name) ... done (time: 0.012s)
+    > create unique index cr_fieldlayoutfields_layoutId_fieldId_unq_idx on {{%fieldlayoutfields}} (layoutId,fieldId) ... done (time: 0.017s)
+    > create index cr_fieldlayoutfields_sortOrder_idx on {{%fieldlayoutfields}} (sortOrder) ... done (time: 0.012s)
+    > create index cr_fieldlayoutfields_tabId_idx on {{%fieldlayoutfields}} (tabId) ... done (time: 0.016s)
+    > create index cr_fieldlayoutfields_fieldId_idx on {{%fieldlayoutfields}} (fieldId) ... done (time: 0.012s)
+    > create index cr_fieldlayouts_type_idx on {{%fieldlayouts}} (type) ... done (time: 0.012s)
+    > create index cr_fieldlayouttabs_sortOrder_idx on {{%fieldlayouttabs}} (sortOrder) ... done (time: 0.019s)
+    > create index cr_fieldlayouttabs_layoutId_idx on {{%fieldlayouttabs}} (layoutId) ... done (time: 0.012s)
+    > create unique index cr_fields_handle_context_unq_idx on {{%fields}} (handle,context) ... done (time: 0.016s)
+    > create index cr_fields_groupId_idx on {{%fields}} (groupId) ... done (time: 0.012s)
+    > create index cr_fields_context_idx on {{%fields}} (context) ... done (time: 0.019s)
+    > create unique index cr_globalsets_name_unq_idx on {{%globalsets}} (name) ... done (time: 0.013s)
+    > create unique index cr_globalsets_handle_unq_idx on {{%globalsets}} (handle) ... done (time: 0.015s)
+    > create index cr_globalsets_fieldLayoutId_idx on {{%globalsets}} (fieldLayoutId) ... done (time: 0.016s)
+    > create index cr_matrixblocks_ownerId_idx on {{%matrixblocks}} (ownerId) ... done (time: 0.016s)
+    > create index cr_matrixblocks_fieldId_idx on {{%matrixblocks}} (fieldId) ... done (time: 0.013s)
+    > create index cr_matrixblocks_typeId_idx on {{%matrixblocks}} (typeId) ... done (time: 0.013s)
+    > create index cr_matrixblocks_sortOrder_idx on {{%matrixblocks}} (sortOrder) ... done (time: 0.011s)
+    > create index cr_matrixblocks_ownerSiteId_idx on {{%matrixblocks}} (ownerSiteId) ... done (time: 0.015s)
+    > create unique index cr_matrixblocktypes_name_fieldId_unq_idx on {{%matrixblocktypes}} (name,fieldId) ... done (time: 0.013s)
+    > create unique index cr_matrixblocktypes_handle_fieldId_unq_idx on {{%matrixblocktypes}} (handle,fieldId) ... done (time: 0.013s)
+    > create index cr_matrixblocktypes_fieldId_idx on {{%matrixblocktypes}} (fieldId) ... done (time: 0.015s)
+    > create index cr_matrixblocktypes_fieldLayoutId_idx on {{%matrixblocktypes}} (fieldLayoutId) ... done (time: 0.012s)
+    > create index cr_migrations_pluginId_idx on {{%migrations}} (pluginId) ... done (time: 0.013s)
+    > create index cr_migrations_type_pluginId_idx on {{%migrations}} (type,pluginId) ... done (time: 0.012s)
+    > create index cr_plugins_enabled_idx on {{%plugins}} (enabled) ... done (time: 0.014s)
+    > create unique index cr_plugins_handle_unq_idx on {{%plugins}} (handle) ... done (time: 0.012s)
+    > create index cr_queue_fail_timeUpdated_timePushed_idx on {{%queue}} (fail,timeUpdated,timePushed) ... done (time: 0.014s)
+    > create index cr_queue_fail_timeUpdated_delay_idx on {{%queue}} (fail,timeUpdated,delay) ... done (time: 0.013s)
+    > create unique index cr_relations_fieldId_sourceId_sourceSiteId_targetId_unq_idx on {{%relations}} (fieldId,sourceId,sourceSiteId,targetId) ... done (time: 0.014s)
+    > create index cr_relations_sourceId_idx on {{%relations}} (sourceId) ... done (time: 0.010s)
+    > create index cr_relations_targetId_idx on {{%relations}} (targetId) ... done (time: 0.011s)
+    > create index cr_relations_sourceSiteId_idx on {{%relations}} (sourceSiteId) ... done (time: 0.013s)
+    > create index cr_routes_uriPattern_idx on {{%routes}} (uriPattern) ... done (time: 0.012s)
+    > create index cr_routes_siteId_idx on {{%routes}} (siteId) ... done (time: 0.012s)
+    > create unique index cr_sections_handle_unq_idx on {{%sections}} (handle) ... done (time: 0.016s)
+    > create unique index cr_sections_name_unq_idx on {{%sections}} (name) ... done (time: 0.014s)
+    > create index cr_sections_structureId_idx on {{%sections}} (structureId) ... done (time: 0.012s)
+    > create unique index cr_sections_sites_sectionId_siteId_unq_idx on {{%sections_sites}} (sectionId,siteId) ... done (time: 0.013s)
+    > create index cr_sections_sites_siteId_idx on {{%sections_sites}} (siteId) ... done (time: 0.013s)
+    > create index cr_sessions_uid_idx on {{%sessions}} (uid) ... done (time: 0.012s)
+    > create index cr_sessions_token_idx on {{%sessions}} (token) ... done (time: 0.012s)
+    > create index cr_sessions_dateUpdated_idx on {{%sessions}} (dateUpdated) ... done (time: 0.014s)
+    > create index cr_sessions_userId_idx on {{%sessions}} (userId) ... done (time: 0.013s)
+    > create unique index cr_shunnedmessages_userId_message_unq_idx on {{%shunnedmessages}} (userId,message) ... done (time: 0.015s)
+    > create unique index cr_sites_handle_unq_idx on {{%sites}} (handle) ... done (time: 0.013s)
+    > create index cr_sites_sortOrder_idx on {{%sites}} (sortOrder) ... done (time: 0.012s)
+    > create unique index cr_sitegroups_name_unq_idx on {{%sitegroups}} (name) ... done (time: 0.013s)
+    > create unique index cr_structureelements_structureId_elementId_unq_idx on {{%structureelements}} (structureId,elementId) ... done (time: 0.015s)
+    > create index cr_structureelements_root_idx on {{%structureelements}} (root) ... done (time: 0.016s)
+    > create index cr_structureelements_lft_idx on {{%structureelements}} (lft) ... done (time: 0.016s)
+    > create index cr_structureelements_rgt_idx on {{%structureelements}} (rgt) ... done (time: 0.012s)
+    > create index cr_structureelements_level_idx on {{%structureelements}} (level) ... done (time: 0.012s)
+    > create index cr_structureelements_elementId_idx on {{%structureelements}} (elementId) ... done (time: 0.013s)
+    > create unique index cr_systemsettings_category_unq_idx on {{%systemsettings}} (category) ... done (time: 0.015s)
+    > create unique index cr_taggroups_name_unq_idx on {{%taggroups}} (name) ... done (time: 0.015s)
+    > create unique index cr_taggroups_handle_unq_idx on {{%taggroups}} (handle) ... done (time: 0.020s)
+    > create index cr_tags_groupId_idx on {{%tags}} (groupId) ... done (time: 0.012s)
+    > create index cr_templatecacheelements_cacheId_idx on {{%templatecacheelements}} (cacheId) ... done (time: 0.014s)
+    > create index cr_templatecacheelements_elementId_idx on {{%templatecacheelements}} (elementId) ... done (time: 0.016s)
+    > create index cr_templatecachequeries_cacheId_idx on {{%templatecachequeries}} (cacheId) ... done (time: 0.012s)
+    > create index cr_templatecachequeries_type_idx on {{%templatecachequeries}} (type) ... done (time: 0.012s)
+    > create index cr_templatecaches_cacheKey_siteId_expiryDate_path_idx on {{%templatecaches}} (cacheKey,siteId,expiryDate,path) ... done (time: 0.016s)
+    > create index cr_templatecaches_cacheKey_siteId_expiryDate_idx on {{%templatecaches}} (cacheKey,siteId,expiryDate) ... done (time: 0.013s)
+    > create index cr_templatecaches_siteId_idx on {{%templatecaches}} (siteId) ... done (time: 0.012s)
+    > create unique index cr_tokens_token_unq_idx on {{%tokens}} (token) ... done (time: 0.014s)
+    > create index cr_tokens_expiryDate_idx on {{%tokens}} (expiryDate) ... done (time: 0.012s)
+    > create unique index cr_usergroups_handle_unq_idx on {{%usergroups}} (handle) ... done (time: 0.020s)
+    > create unique index cr_usergroups_name_unq_idx on {{%usergroups}} (name) ... done (time: 0.017s)
+    > create unique index cr_usergroups_users_groupId_userId_unq_idx on {{%usergroups_users}} (groupId,userId) ... done (time: 0.013s)
+    > create index cr_usergroups_users_userId_idx on {{%usergroups_users}} (userId) ... done (time: 0.018s)
+    > create unique index cr_userpermissions_name_unq_idx on {{%userpermissions}} (name) ... done (time: 0.013s)
+    > create unique index cr_userpermissions_usergroups_permissionId_groupId_unq_idx on {{%userpermissions_usergroups}} (permissionId,groupId) ... done (time: 0.013s)
+    > create index cr_userpermissions_usergroups_groupId_idx on {{%userpermissions_usergroups}} (groupId) ... done (time: 0.014s)
+    > create unique index cr_userpermissions_users_permissionId_userId_unq_idx on {{%userpermissions_users}} (permissionId,userId) ... done (time: 0.017s)
+    > create index cr_userpermissions_users_userId_idx on {{%userpermissions_users}} (userId) ... done (time: 0.012s)
+    > create index cr_users_uid_idx on {{%users}} (uid) ... done (time: 0.014s)
+    > create index cr_users_verificationCode_idx on {{%users}} (verificationCode) ... done (time: 0.018s)
+    > create unique index cr_volumefolders_name_parentId_volumeId_unq_idx on {{%volumefolders}} (name,parentId,volumeId) ... done (time: 0.014s)
+    > create index cr_volumefolders_parentId_idx on {{%volumefolders}} (parentId) ... done (time: 0.013s)
+    > create index cr_volumefolders_volumeId_idx on {{%volumefolders}} (volumeId) ... done (time: 0.013s)
+    > create unique index cr_volumes_name_unq_idx on {{%volumes}} (name) ... done (time: 0.014s)
+    > create unique index cr_volumes_handle_unq_idx on {{%volumes}} (handle) ... done (time: 0.013s)
+    > create index cr_volumes_fieldLayoutId_idx on {{%volumes}} (fieldLayoutId) ... done (time: 0.013s)
+    > create index cr_widgets_userId_idx on {{%widgets}} (userId) ... done (time: 0.014s)
+    > create index cr_elements_sites_uri_siteId_idx on {{%elements_sites}} (uri,siteId) ... done (time: 0.013s)
+    > create index cr_users_email_idx on {{%users}} (email) ... done (time: 0.014s)
+    > create index cr_users_username_idx on {{%users}} (username) ... done (time: 0.013s)
+    > create table {{%searchindex}} ... done (time: 0.004s)
+    > add primary key cr_searchindex_elementId_attribute_fieldId_siteId_unq_idx on {{%searchindex}} (elementId,attribute,fieldId,siteId) ... done (time: 0.005s)
+    > add foreign key cr_assetindexdata_volumeId_fk: {{%assetindexdata}} (volumeId) references {{%volumes}} (id) ... done (time: 0.033s)
+    > add foreign key cr_assets_folderId_fk: {{%assets}} (folderId) references {{%volumefolders}} (id) ... done (time: 0.030s)
+    > add foreign key cr_assets_id_fk: {{%assets}} (id) references {{%elements}} (id) ... done (time: 0.028s)
+    > add foreign key cr_assets_volumeId_fk: {{%assets}} (volumeId) references {{%volumes}} (id) ... done (time: 0.037s)
+    > add foreign key cr_categories_groupId_fk: {{%categories}} (groupId) references {{%categorygroups}} (id) ... done (time: 0.040s)
+    > add foreign key cr_categories_id_fk: {{%categories}} (id) references {{%elements}} (id) ... done (time: 0.047s)
+    > add foreign key cr_categorygroups_fieldLayoutId_fk: {{%categorygroups}} (fieldLayoutId) references {{%fieldlayouts}} (id) ... done (time: 0.052s)
+    > add foreign key cr_categorygroups_structureId_fk: {{%categorygroups}} (structureId) references {{%structures}} (id) ... done (time: 0.047s)
+    > add foreign key cr_categorygroups_sites_groupId_fk: {{%categorygroups_sites}} (groupId) references {{%categorygroups}} (id) ... done (time: 0.041s)
+    > add foreign key cr_categorygroups_sites_siteId_fk: {{%categorygroups_sites}} (siteId) references {{%sites}} (id) ... done (time: 0.032s)
+    > add foreign key cr_content_elementId_fk: {{%content}} (elementId) references {{%elements}} (id) ... done (time: 0.039s)
+    > add foreign key cr_craftidtokens_userId_fk: {{%craftidtokens}} (userId) references {{%users}} (id) ... done (time: 0.040s)
+    > add foreign key cr_content_siteId_fk: {{%content}} (siteId) references {{%sites}} (id) ... done (time: 0.044s)
+    > add foreign key cr_elements_fieldLayoutId_fk: {{%elements}} (fieldLayoutId) references {{%fieldlayouts}} (id) ... done (time: 0.044s)
+    > add foreign key cr_elements_sites_elementId_fk: {{%elements_sites}} (elementId) references {{%elements}} (id) ... done (time: 0.051s)
+    > add foreign key cr_elements_sites_siteId_fk: {{%elements_sites}} (siteId) references {{%sites}} (id) ... done (time: 0.049s)
+    > add foreign key cr_entries_authorId_fk: {{%entries}} (authorId) references {{%users}} (id) ... done (time: 0.048s)
+    > add foreign key cr_entries_id_fk: {{%entries}} (id) references {{%elements}} (id) ... done (time: 0.055s)
+    > add foreign key cr_entries_sectionId_fk: {{%entries}} (sectionId) references {{%sections}} (id) ... done (time: 0.056s)
+    > add foreign key cr_entries_typeId_fk: {{%entries}} (typeId) references {{%entrytypes}} (id) ... done (time: 0.059s)
+    > add foreign key cr_entrydrafts_creatorId_fk: {{%entrydrafts}} (creatorId) references {{%users}} (id) ... done (time: 0.053s)
+    > add foreign key cr_entrydrafts_entryId_fk: {{%entrydrafts}} (entryId) references {{%entries}} (id) ... done (time: 0.056s)
+    > add foreign key cr_entrydrafts_siteId_fk: {{%entrydrafts}} (siteId) references {{%sites}} (id) ... done (time: 0.047s)
+    > add foreign key cr_entrydrafts_sectionId_fk: {{%entrydrafts}} (sectionId) references {{%sections}} (id) ... done (time: 0.042s)
+    > add foreign key cr_entrytypes_fieldLayoutId_fk: {{%entrytypes}} (fieldLayoutId) references {{%fieldlayouts}} (id) ... done (time: 0.030s)
+    > add foreign key cr_entrytypes_sectionId_fk: {{%entrytypes}} (sectionId) references {{%sections}} (id) ... done (time: 0.042s)
+    > add foreign key cr_entryversions_creatorId_fk: {{%entryversions}} (creatorId) references {{%users}} (id) ... done (time: 0.049s)
+    > add foreign key cr_entryversions_entryId_fk: {{%entryversions}} (entryId) references {{%entries}} (id) ... done (time: 0.040s)
+    > add foreign key cr_entryversions_siteId_fk: {{%entryversions}} (siteId) references {{%sites}} (id) ... done (time: 0.039s)
+    > add foreign key cr_entryversions_sectionId_fk: {{%entryversions}} (sectionId) references {{%sections}} (id) ... done (time: 0.050s)
+    > add foreign key cr_fieldlayoutfields_fieldId_fk: {{%fieldlayoutfields}} (fieldId) references {{%fields}} (id) ... done (time: 0.052s)
+    > add foreign key cr_fieldlayoutfields_layoutId_fk: {{%fieldlayoutfields}} (layoutId) references {{%fieldlayouts}} (id) ... done (time: 0.051s)
+    > add foreign key cr_fieldlayoutfields_tabId_fk: {{%fieldlayoutfields}} (tabId) references {{%fieldlayouttabs}} (id) ... done (time: 0.053s)
+    > add foreign key cr_fieldlayouttabs_layoutId_fk: {{%fieldlayouttabs}} (layoutId) references {{%fieldlayouts}} (id) ... done (time: 0.051s)
+    > add foreign key cr_fields_groupId_fk: {{%fields}} (groupId) references {{%fieldgroups}} (id) ... done (time: 0.047s)
+    > add foreign key cr_globalsets_fieldLayoutId_fk: {{%globalsets}} (fieldLayoutId) references {{%fieldlayouts}} (id) ... done (time: 0.046s)
+    > add foreign key cr_globalsets_id_fk: {{%globalsets}} (id) references {{%elements}} (id) ... done (time: 0.046s)
+    > add foreign key cr_matrixblocks_fieldId_fk: {{%matrixblocks}} (fieldId) references {{%fields}} (id) ... done (time: 0.048s)
+    > add foreign key cr_matrixblocks_id_fk: {{%matrixblocks}} (id) references {{%elements}} (id) ... done (time: 0.036s)
+    > add foreign key cr_matrixblocks_ownerId_fk: {{%matrixblocks}} (ownerId) references {{%elements}} (id) ... done (time: 0.050s)
+    > add foreign key cr_matrixblocks_ownerSiteId_fk: {{%matrixblocks}} (ownerSiteId) references {{%sites}} (id) ... done (time: 0.048s)
+    > add foreign key cr_matrixblocks_typeId_fk: {{%matrixblocks}} (typeId) references {{%matrixblocktypes}} (id) ... done (time: 0.051s)
+    > add foreign key cr_matrixblocktypes_fieldId_fk: {{%matrixblocktypes}} (fieldId) references {{%fields}} (id) ... done (time: 0.053s)
+    > add foreign key cr_matrixblocktypes_fieldLayoutId_fk: {{%matrixblocktypes}} (fieldLayoutId) references {{%fieldlayouts}} (id) ... done (time: 0.056s)
+    > add foreign key cr_migrations_pluginId_fk: {{%migrations}} (pluginId) references {{%plugins}} (id) ... done (time: 0.046s)
+    > add foreign key cr_relations_fieldId_fk: {{%relations}} (fieldId) references {{%fields}} (id) ... done (time: 0.031s)
+    > add foreign key cr_relations_sourceId_fk: {{%relations}} (sourceId) references {{%elements}} (id) ... done (time: 0.056s)
+    > add foreign key cr_relations_sourceSiteId_fk: {{%relations}} (sourceSiteId) references {{%sites}} (id) ... done (time: 0.048s)
+    > add foreign key cr_relations_targetId_fk: {{%relations}} (targetId) references {{%elements}} (id) ... done (time: 0.052s)
+    > add foreign key cr_routes_siteId_fk: {{%routes}} (siteId) references {{%sites}} (id) ... done (time: 0.039s)
+    > add foreign key cr_sections_structureId_fk: {{%sections}} (structureId) references {{%structures}} (id) ... done (time: 0.040s)
+    > add foreign key cr_sections_sites_siteId_fk: {{%sections_sites}} (siteId) references {{%sites}} (id) ... done (time: 0.043s)
+    > add foreign key cr_sections_sites_sectionId_fk: {{%sections_sites}} (sectionId) references {{%sections}} (id) ... done (time: 0.040s)
+    > add foreign key cr_sessions_userId_fk: {{%sessions}} (userId) references {{%users}} (id) ... done (time: 0.047s)
+    > add foreign key cr_shunnedmessages_userId_fk: {{%shunnedmessages}} (userId) references {{%users}} (id) ... done (time: 0.037s)
+    > add foreign key cr_sites_groupId_fk: {{%sites}} (groupId) references {{%sitegroups}} (id) ... done (time: 0.047s)
+    > add foreign key cr_structureelements_elementId_fk: {{%structureelements}} (elementId) references {{%elements}} (id) ... done (time: 0.065s)
+    > add foreign key cr_structureelements_structureId_fk: {{%structureelements}} (structureId) references {{%structures}} (id) ... done (time: 0.055s)
+    > add foreign key cr_taggroups_fieldLayoutId_fk: {{%taggroups}} (fieldLayoutId) references {{%fieldlayouts}} (id) ... done (time: 0.047s)
+    > add foreign key cr_tags_groupId_fk: {{%tags}} (groupId) references {{%taggroups}} (id) ... done (time: 0.040s)
+    > add foreign key cr_tags_id_fk: {{%tags}} (id) references {{%elements}} (id) ... done (time: 0.041s)
+    > add foreign key cr_templatecacheelements_cacheId_fk: {{%templatecacheelements}} (cacheId) references {{%templatecaches}} (id) ... done (time: 0.043s)
+    > add foreign key cr_templatecacheelements_elementId_fk: {{%templatecacheelements}} (elementId) references {{%elements}} (id) ... done (time: 0.044s)
+    > add foreign key cr_templatecachequeries_cacheId_fk: {{%templatecachequeries}} (cacheId) references {{%templatecaches}} (id) ... done (time: 0.039s)
+    > add foreign key cr_templatecaches_siteId_fk: {{%templatecaches}} (siteId) references {{%sites}} (id) ... done (time: 0.043s)
+    > add foreign key cr_usergroups_users_groupId_fk: {{%usergroups_users}} (groupId) references {{%usergroups}} (id) ... done (time: 0.041s)
+    > add foreign key cr_usergroups_users_userId_fk: {{%usergroups_users}} (userId) references {{%users}} (id) ... done (time: 0.039s)
+    > add foreign key cr_userpermissions_usergroups_groupId_fk: {{%userpermissions_usergroups}} (groupId) references {{%usergroups}} (id) ... done (time: 0.039s)
+    > add foreign key cr_userpermissions_usergroups_permissionId_fk: {{%userpermissions_usergroups}} (permissionId) references {{%userpermissions}} (id) ... done (time: 0.032s)
+    > add foreign key cr_userpermissions_users_permissionId_fk: {{%userpermissions_users}} (permissionId) references {{%userpermissions}} (id) ... done (time: 0.044s)
+    > add foreign key cr_userpermissions_users_userId_fk: {{%userpermissions_users}} (userId) references {{%users}} (id) ... done (time: 0.049s)
+    > add foreign key cr_userpreferences_userId_fk: {{%userpreferences}} (userId) references {{%users}} (id) ... done (time: 0.039s)
+    > add foreign key cr_users_id_fk: {{%users}} (id) references {{%elements}} (id) ... done (time: 0.048s)
+    > add foreign key cr_users_photoId_fk: {{%users}} (photoId) references {{%assets}} (id) ... done (time: 0.058s)
+    > add foreign key cr_volumefolders_parentId_fk: {{%volumefolders}} (parentId) references {{%volumefolders}} (id) ... done (time: 0.047s)
+    > add foreign key cr_volumefolders_volumeId_fk: {{%volumefolders}} (volumeId) references {{%volumes}} (id) ... done (time: 0.040s)
+    > add foreign key cr_volumes_fieldLayoutId_fk: {{%volumes}} (fieldLayoutId) references {{%fieldlayouts}} (id) ... done (time: 0.041s)
+    > add foreign key cr_widgets_userId_fk: {{%widgets}} (userId) references {{%users}} (id) ... done (time: 0.037s)
+    > populate the info table ... done
+    > save the first user ... done
+    > save the email settings ... done
+*** installed Craft successfully (time: 6.920s)
+
+
+
+teddy@teddy:~/Documents/works/craft$ ./craft setup/security-key
+
+Generating a security key ... done (9ZL9jgeOtIvpAXdGHAukQkUvc73tK7Xk)
+
+NGINX SETUP:
+sudo gedit /etc/nginx/sites-available/craftcms.test
+
+server {
+    listen 80; 
+    listen [::]:80;
+    root /home/teddy/Documents/works/craft/web; #your document root  <--- REMEMBER TO ADD /web AT THE END!!!
+    server_name craftcms.test ;  # Your server name
+    index index.php index.html index.htm ;
+
+    # Webfonts,fonts
+    location ~* \.(?:ttf|ttc|otf|eot|woff|woff2)$ {
+        add_header "Access-Control-Allow-Origin" "*";
+        expires 1y;
+        access_log off;
+        add_header Cache-Control "public";
+    }
+
+    # Media: images, icons, video, audio, HTC
+    location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
+        expires 1y;
+        access_log off;
+        add_header Cache-Control "public";
+    }
+
+    # Js, Css
+    location ~* \.(?:css|js)$ {
+        expires 1y;
+        access_log off;
+        add_header Cache-Control "public";
+    }
+
+    # Serve static files without touching php
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    } 
+
+    # pass requests for dynamic content to site
+    location ~ [^/]\.php(/|$) {
+        try_files $uri /index.php; 
+        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+        
+        fastcgi_buffers 1024 4k;
+
+        fastcgi_read_timeout 600s;
+        fastcgi_connect_timeout 600s;
+
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        #include fastcgi_params;
+        #FOR DEVELOPMENT MODE ONLY - BEGIN
+        fastcgi_param MAGE_IS_DEVELOPER_MODE true;
+        fastcgi_param PHP_VALUE  display_startup_errors=on;
+        fastcgi_param PHP_VALUE  display_errors=on;
+        fastcgi_param PHP_VALUE  html_errors=on;
+        fastcgi_param PHP_VALUE  log_errors=on;
+        fastcgi_param PHP_VALUE  error_log=/home/teddy/Documents/works/craft/var/log/system.log;
+        #FOR DEVELOPMENT MODE ONLY - END
+        include fastcgi_params;
+    }
+
+    gzip on;
+    gzip_disable "msie6";
+
+    gzip_comp_level 6;
+    gzip_min_length 1100;
+    gzip_buffers 16 8k;
+    gzip_proxied any;
+    gzip_types
+    text/plain
+    text/css
+    text/js
+    text/xml
+    text/javascript
+    application/javascript
+    application/x-javascript
+    application/json
+    application/xml
+    application/xml+rss
+    image/svg+xml;
+    gzip_vary on;
+
+    # Banned locations (only reached if the earlier PHP entry point regexes don't match)
+    location ~* (\.php$|\.htaccess$|\.git) {
+        deny all;
+    }
+}
+
+
+
+Enable file config
+
+sudo ln -s /etc/nginx/sites-available/craftcms.test /etc/nginx/sites-enabled/craftcms.test
+
+Register the host on my system
+
+sudo gedit /etc/hosts
+
+Like this:
+
+...
+127.0.0.1 	craftcms.test
+...
+
+CHECK THE NGINX SETTING AND RESTART IT:
+
+teddy@teddy:~$ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+sudo service nginx restart
+
+TEST : http://craftcms.test
+ADMIN: http://craftcms.test/admin
+username: admin
+password: admin123
